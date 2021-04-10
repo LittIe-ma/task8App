@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		305ACDAB261E1FD3003ABA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ACDAA261E1FD3003ABA06 /* AppDelegate.swift */; };
 		305ACDAD261E1FD3003ABA06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ACDAC261E1FD3003ABA06 /* SceneDelegate.swift */; };
-		305ACDAF261E1FD3003ABA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ACDAE261E1FD3003ABA06 /* ViewController.swift */; };
 		305ACDB2261E1FD3003ABA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305ACDB0261E1FD3003ABA06 /* Main.storyboard */; };
 		305ACDB4261E1FD9003ABA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305ACDB3261E1FD9003ABA06 /* Assets.xcassets */; };
 		305ACDB7261E1FD9003ABA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305ACDB5261E1FD9003ABA06 /* LaunchScreen.storyboard */; };
+		305ACDC1261E2106003ABA06 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ACDC0261E2106003ABA06 /* RedViewController.swift */; };
+		305ACDC4261E2113003ABA06 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ACDC3261E2113003ABA06 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		305ACDA7261E1FD3003ABA06 /* task8App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task8App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305ACDAA261E1FD3003ABA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		305ACDAC261E1FD3003ABA06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		305ACDAE261E1FD3003ABA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		305ACDB1261E1FD3003ABA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		305ACDB3261E1FD9003ABA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305ACDB6261E1FD9003ABA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		305ACDB8261E1FD9003ABA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305ACDC0261E2106003ABA06 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		305ACDC3261E2113003ABA06 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				305ACDAA261E1FD3003ABA06 /* AppDelegate.swift */,
 				305ACDAC261E1FD3003ABA06 /* SceneDelegate.swift */,
-				305ACDAE261E1FD3003ABA06 /* ViewController.swift */,
 				305ACDB0261E1FD3003ABA06 /* Main.storyboard */,
 				305ACDB3261E1FD9003ABA06 /* Assets.xcassets */,
 				305ACDB5261E1FD9003ABA06 /* LaunchScreen.storyboard */,
 				305ACDB8261E1FD9003ABA06 /* Info.plist */,
+				305ACDC0261E2106003ABA06 /* RedViewController.swift */,
+				305ACDC3261E2113003ABA06 /* GreenViewController.swift */,
 			);
 			path = task8App;
 			sourceTree = "<group>";
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305ACDAF261E1FD3003ABA06 /* ViewController.swift in Sources */,
+				305ACDC4261E2113003ABA06 /* GreenViewController.swift in Sources */,
 				305ACDAB261E1FD3003ABA06 /* AppDelegate.swift in Sources */,
+				305ACDC1261E2106003ABA06 /* RedViewController.swift in Sources */,
 				305ACDAD261E1FD3003ABA06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasu.task8App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yasu.task8App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
