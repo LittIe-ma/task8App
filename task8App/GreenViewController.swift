@@ -12,22 +12,31 @@ class GreenViewController: UIViewController {
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var slider: UISlider!
 
+    private var appDelegate: AppDelegate {
+        UIApplication.shared.delegate as! AppDelegate
+    }
+
+    private var value: Float {
+        get {
+            appDelegate.number
+        }
+        set {
+            appDelegate.number = newValue
+        }
+    }
+
     @IBAction func changeSlider(_ sender: Any) {
 
-        let delegate = UIApplication.shared.delegate as! AppDelegate
+        value = slider.value
 
-        delegate.number = slider.value
-
-        label.text = "\(delegate.number)"
+        label.text = "\(value)"
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        let delegate = UIApplication.shared.delegate as! AppDelegate
+        label.text = "\(value)"
 
-        label.text = "\(delegate.number)"
-
-        slider.value = delegate.number
+        slider.value = value
     }
 }
